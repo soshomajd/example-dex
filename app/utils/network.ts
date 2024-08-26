@@ -11,6 +11,14 @@ type SupportedChain = Chain & { network: 'mainnet' | 'testnet'; icon: string };
 export const supportedChains: SupportedChain[] = [
   {
     network: 'mainnet',
+    icon: '/assets/ethereum.svg',
+    id: '0x1',
+    token: 'ETH',
+    label: 'Ethereum',
+    rpcUrl: 'https://eth.llamarpc.com'
+  },
+  {
+    network: 'mainnet',
     icon: '/assets/arbitrum.svg',
     id: '0xa4b1',
     token: 'ETH',
@@ -32,6 +40,14 @@ export const supportedChains: SupportedChain[] = [
     token: 'ETH',
     label: 'Base',
     rpcUrl: 'https://base-rpc.publicnode.com'
+  },
+  {
+    network: 'mainnet',
+    icon: '/assets/mantle.svg',
+    id: '0x1388',
+    token: 'ETH',
+    label: 'Mantle',
+    rpcUrl: 'https://mantle-mainnet.g.alchemy.com/v2/un-GzvqyPc82Qvi2-rpme2BNzisYAmjP'
   },
   {
     network: 'testnet',
